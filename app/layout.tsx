@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tee Time",
-  description: "Where Every Hour is a Stylish Hour!"
+  title: "Attire",
+  description: "Where Fashion Meets Comfort!"
 };
 
 export default function RootLayout({
