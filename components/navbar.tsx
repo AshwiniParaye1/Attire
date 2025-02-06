@@ -1,19 +1,22 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
-import { IoIosGlobe, IoIosHeartEmpty, IoIosSearch } from "react-icons/io";
+import { IoIosHeartEmpty, IoIosSearch } from "react-icons/io";
 import { RiShoppingCartLine } from "react-icons/ri";
 import Image from "next/image";
 import { GoHomeFill } from "react-icons/go";
 import { FiUser } from "react-icons/fi";
+import Language from "./language/page";
 
 const Navbar = () => {
   return (
     <div className="flex flex-col justify-between h-screen">
-      <div className="flex flex-row justify-between pt-4 text-white text-shadow ml-[8%] mr-[8%]">
-        <div>
+      <div className="flex flex-row justify-between pt-6 ml-[12%] mr-[12%]">
+        <div className="">
           <Image src={"/attire-logo.png"} alt="logo" width={60} height={60} />
         </div>
-        <div className="">
+        <div className="text-white text-shadow">
           <ul className="flex flex-row justify-center items-center gap-16 text-lg font-bold">
             <li>
               <Link href="/">WOMEN</Link>
@@ -29,10 +32,12 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-row justify-center items-center gap-7 text-white text-shadow">
-          <IoIosGlobe size={22} />
-          <IoIosHeartEmpty size={22} />
-          <RiShoppingCartLine size={22} />
+        <div className="flex flex-col ">
+          <div className="flex flex-row items-center gap-7 text-white text-shadow ">
+            <Language />
+            <IoIosHeartEmpty size={22} className="hover:text-gray-600" />
+            <RiShoppingCartLine size={22} className="hover:text-gray-600" />
+          </div>
         </div>
       </div>
       <div className="flex flex-row justify-center items-center pb-8 gap-48 text-shadow">
