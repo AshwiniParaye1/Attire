@@ -1,0 +1,39 @@
+/* CategoryPage.module.css */
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+}
+
+.imageScroller {
+  display: flex;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+  width: 100vw; /* Full-width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+/* 
+h1 {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 10px;
+} */

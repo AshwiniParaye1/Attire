@@ -1,19 +1,18 @@
-"use client";
-
+// components/Navbar.tsx
 import React from "react";
 import Link from "next/link";
 import { IoIosHeartEmpty, IoIosSearch } from "react-icons/io";
 import { RiShoppingCartLine } from "react-icons/ri";
-import Image from "next/image";
 import { GoHomeFill } from "react-icons/go";
 import { FiUser } from "react-icons/fi";
-import Language from "./language/page";
+import Image from "next/image";
+import Language from "./language/page"; // If you have a language component
 
 const Navbar = () => {
   return (
     <div className="flex flex-col justify-between h-screen">
       <div className="flex flex-row justify-between pt-6 ml-[12%] mr-[12%]">
-        <div className="">
+        <div>
           <Image src={"/attire-logo.png"} alt="logo" width={60} height={60} />
         </div>
         <div className="text-white text-shadow">
